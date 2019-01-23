@@ -1,0 +1,16 @@
+{
+  "0": {
+   "id": "comment0",
+    "author": "Twillight Sparkle",
+    "avatar":"images/twiligth-sparkle.png",
+    "text":"Обязательно приду! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem fuga laborum officia quam qui vel. Architecto consequatur explicabo hic in itaque totam, voluptates. Aperiam debitis est laudantium maiores nostrum!",
+    "likes":5
+  },
+  "1": {
+    "id": "comment1",
+    "author": "Applejack",
+    "avatar":"images/applejack.png",
+    "text":"В прошлом году было нереально круто!",
+    "likes":2
+  }
+}

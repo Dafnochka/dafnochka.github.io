@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+}
+body header {
+  max-height: 300px;
+  min-height: 300px;
+  background: url("../images/main_photo.jpg") right top;
+  background-size: cover;
+  padding: 50px;
+}
+body header .gitlogo {
+  display: block;
+  position: absolute;
+  background-image: url("../images/GitHub-Mark-64px.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 20px;
+}
+body header p {
+  margin: 0;
+  font-size: 150%;
+}
+body header h1 {
+  margin: 0;
+  font-size: 230%;
+  max-width: 75%;
+}
+body header .contacts {
+  max-width: 70%;
+  margin-top: 25px;
+}
+@media screen and (max-width: 510px) {
+  body header .contacts {
+    display: none;
+  }
+}
+body header .contacts a {
+  color: black;
+}
+body main a {
+  display: block;
+  padding: 5%;
+  width: 70%;
+  margin: 50px;
+  box-shadow: 0 0 15px rgba(122, 122, 122, 0.5);
+  text-decoration: none;
+  color: black;
+}
+body main a :hover {
+  text-decoration: none;
+  color: black;
+}
+body main a img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+body main .left {
+  margin-left: 0;
+  float: left;
+}
+body main .rigth {
+  margin-right: 0;
+  float: right;
+}
+body .filler {
+  height: 50px;
+}
+body footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+  background: #090974;
+  padding: 8px;
+}
+body footer a {
+  height: 33px;
+}

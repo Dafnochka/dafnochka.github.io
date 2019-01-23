@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Урок 5.</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+  <div class="container" id="app">
+    <h2>Приглашения на Пони-вечеринку</h2>
+    <form>
+      <!-- Крепим карточки участников сюда -->
+      <div class="attendee-list"></div>
+
+      <div class="row justify-content-center">
+        <div class="col-sm-6"></div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-secondary add-attendee">Добавить участника</button>
+        </div>
+      </div>
+      <hr>
+      <div class="row justify-content-center">
+        <div class="col-sm-6">
+          <!-- Крепим цену одного билета -->
+          <span id="unit-price" class="unit-price"></span>
+        </div>
+        <div class="col-sm-2 text-left">
+          <button type="submit" id="checkout-button" class="btn btn-primary">
+            Оплатить
+            <!-- Крепим общую стоимость билетов -->
+            <span class="amount"></span>
+          </button>
+        </div>
+      </div>
+    </form>
+    <hr>
+    <h2>Комментарии</h2>
+    <div class="comment-box">
+      <div class="commentrow  row justify-content-center" >
+        <div class="col-sm-1.5">
+          <img src="images/guest.png" alt="avatar" class="img-circle">
+          <div class="author"></div>
+        </div>
+        <div class="col-sm-5">
+          <div class="comment">
+            <div class="form-group">
+              <input
+                      class="form-control newcomment"
+                      placeholder="Введите сообщение"
+                      required>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-sm-1 text-left">
+          <button type="button" class="btn btn-light post">Отправить</button>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <img src="images/pinkie.png" id="pinkie" alt="">
+  
+  <template data-template="attendee">
+    <div class="attendee row justify-content-center">
+      <div class="col-sm-3">
+        <div class="form-group">
+          <input 
+            class="form-control"
+            placeholder="Введите имя" 
+            name="attendee[][name]"
+          required>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Email адрес" 
+            name="attendee[][email]"
+          required>
+        </div>
+      </div>
+      <div class="col-sm-2 text-left">
+        <button type="button" class="btn btn-light remove-attendee">Удалить</button>
+      </div>
+    </div>
+  </template>
+
+  <!--Шаблон комментария-->
+  <template data-template="comment">
+    <div class="commentrow  row justify-content-center" id="-1">
+    <div class="col-sm-1.5">
+      <img src="" alt="avatar" class="img-circle">
+      <div class="author"></div>
+    </div>
+    <div class="col-sm-5">
+      <div class="comment">
+
+      </div>
+    </div>
+    <div class="col-sm-1 text-left">
+      <button type="button" class="btn btn-light remove-comment">Удалить</button>
+      <span class="like fa fa-thumbs-up col-sm-0.5" aria-hidden="true"></span>
+      <span class="likes" >4</span>
+    </div>
+    </div>
+  </template>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

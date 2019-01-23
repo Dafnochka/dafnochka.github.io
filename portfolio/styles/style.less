@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+
+  header {
+    max-height: 300px;
+    min-height: 300px;
+    background: url("../images/main_photo.jpg") right top;
+    background-size: cover;
+    padding: 50px;
+
+    .gitlogo{
+      display: block;
+      position: absolute;
+      background-image: url("../images/GitHub-Mark-64px.png");
+      background-size: cover;
+      width: 50px;
+      height: 50px;
+      top: 0;
+      left: 20px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 150%;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 230%;
+      max-width: 75%;
+
+    }
+    .contacts {
+      max-width: 70%;
+      margin-top: 25px;
+
+      @media screen and (max-width: 510px) {
+        display: none;
+      }
+
+      a {
+        color: black;
+      }
+    }
+
+  }
+
+  main {
+    a {
+      display: block;
+      padding: 5%;
+      width: 70%;
+      margin: 50px;
+      box-shadow: 0 0 15px rgba(122, 122, 122, 0.5);
+      text-decoration: none;
+      color: black;
+
+      :hover{
+        text-decoration: none;
+        color: black;
+      }
+
+      img {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+    .left {
+      margin-left: 0;
+      float: left;
+    }
+    .rigth {
+      margin-right: 0;
+      float: right;
+    }
+  }
+
+  .filler {
+    height: 50px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    background: #090974;
+    padding: 8px;
+
+    a {
+      height: 33px;
+
+    }
+  }
+
+}

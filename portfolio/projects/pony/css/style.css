@@ -1,0 +1,51 @@
+body {
+	margin: 5vh auto;
+	background-image: url("../images/back.png");
+	background-size: cover;
+
+}
+
+.unit-price {
+	color: #999;
+}
+
+.container{
+	padding: 20px;
+	background: rgba(255, 255, 255, 0.7);
+}
+#pinkie{
+	width: 20%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+h2{
+	text-align: center;
+	color: darkorchid;
+	font-family: "Monotype Corsiva", cursive;
+	font-weight: bolder;
+}
+.img-circle{
+	width: 40px;
+	border-radius: 20px;
+	border: #999999 1px solid;
+}
+.author{
+	font-size: 10px;
+	display: block;
+	width: 80px;
+}
+.comment{
+	background: rgba(255, 255, 255, 0.7);
+	font-family: cursive;
+	padding: 5px;
+	border-radius: 5px;
+	border: #999999 1px solid;
+
+}
+.commentrow{
+	margin: 10px;
+}
+.fa:hover{
+	cursor: pointer;
+}

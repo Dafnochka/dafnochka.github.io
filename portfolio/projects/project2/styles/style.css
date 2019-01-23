@@ -1,0 +1,765 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #d9d9d9;
+}
+html a,
+body a {
+  text-decoration: none;
+}
+header {
+  height: 700px;
+  background: url("../images/header.jpg") no-repeat;
+  background-size: cover;
+}
+header .header_container {
+  width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  font-family: "Raleway Bold", sans-serif;
+}
+header .header_container .logo {
+  position: absolute;
+  left: 69px;
+  top: 24px;
+}
+header .header_container .welcome {
+  background-color: #fff51f;
+  width: 270px;
+  height: 300px;
+  position: absolute;
+  top: 336px;
+  color: #333333;
+  text-align: left;
+}
+header .header_container .welcome .welcome_to {
+  display: block;
+  width: 199px;
+  height: 52px;
+  margin: 82px 46px 0 25px;
+  font-size: 27px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  text-transform: uppercase;
+}
+header .header_container .welcome .welcome_in {
+  display: block;
+  width: 218px;
+  height: 60px;
+  margin: 24px 30px auto 22px;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 14px;
+  /* Приближение из-за подстановки шрифтов */
+}
+header .header_container .icons {
+  float: right;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+header .header_container .icons a i {
+  font-size: 16px;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  color: white;
+  text-shadow: 1px 1px 3px #000000;
+}
+header .header_container .header_promo {
+  width: 313px;
+  height: 261px;
+  position: absolute;
+  top: 243px;
+  right: 109px;
+}
+header .header_container .header_promo .promo_head {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 0.8;
+  text-align: left;
+  color: #fff51f;
+}
+header .header_container .header_promo .promo_text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  text-align: left;
+  color: #fff51f;
+}
+header .header_container .header_promo .buy {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  text-decoration: none;
+  background: #fff51f;
+  padding: 19px 28px;
+  color: #000000;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 800;
+}
+main {
+  position: relative;
+  top: -20px;
+  width: 1170px;
+  margin: 0 auto;
+}
+main .menu {
+  width: 270px;
+  float: left;
+  margin: 0 30px 0 0;
+}
+main .menu ul {
+  padding: 0;
+  margin: 0;
+}
+main .menu ul li {
+  list-style: none;
+  padding: 0;
+}
+main .menu ul li a {
+  display: block;
+  text-decoration: none;
+  background: #26d2fc;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 900;
+  line-height: 32px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  text-transform: uppercase;
+}
+main .menu ul li a:hover {
+  color: white;
+  background: #333333;
+}
+main .menu a {
+  width: 228px;
+  height: 33px;
+  padding: 5px 0 5px 42px;
+}
+.menu li:first-child a {
+  color: white;
+  padding: 11px 0 11px 42px;
+  background: #333333;
+}
+.open {
+  width: 270px;
+  height: 300px;
+  background: url("../images/shop.jpg");
+  float: left;
+  background-size: cover;
+  margin-top: 30px;
+}
+.open div {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 36px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 800;
+  line-height: 36px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  text-transform: uppercase;
+  width: 109px;
+  margin-top: 142px;
+  margin-left: 129px;
+}
+.content {
+  width: 870px;
+  float: right;
+}
+.content .group {
+  font-family: "Roboto", sans-serif;
+  color: #707070;
+  font-size: 22px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 900;
+  font-style: italic;
+  text-align: left;
+  padding: 30px;
+  margin-bottom: 30px;
+  background: #f8f8f8;
+  text-transform: uppercase;
+}
+.content .products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.content .products .product {
+  background: #f8f8f8;
+  width: 270px;
+  height: 320px;
+  margin-bottom: 30px;
+}
+.content .products .product img {
+  width: 250px;
+  height: 230px;
+  margin: 10px  10px 0 10px;
+}
+.content .products .product .name_place {
+  background-color: #ffffff;
+  width: 270px;
+  height: 80px;
+  position: relative;
+  bottom: 4px;
+  font-family: "Roboto", sans-serif;
+}
+.content .products .product .name_place .name {
+  color: #333333;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 900;
+  font-style: italic;
+  line-height: 18.012px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  margin: 0;
+  padding: 24px 26px;
+}
+.content .products .product .name_place .price {
+  position: absolute;
+  top: 27px;
+  right: 14px;
+  color: #333333;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 900;
+  font-style: italic;
+  text-align: right;
+}
+.content .products:nth-child(3n) {
+  margin-right: 0;
+}
+.brands {
+  height: 160px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  float: right;
+  width: 100%;
+}
+.brands img {
+  height: 50px;
+}
+.social {
+  height: 350px;
+  float: right;
+  background-color: #eaeaea;
+  width: 100%;
+}
+.social a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin-top: 51px;
+  margin-bottom: 29px;
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+  font-size: 22px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 900;
+  font-style: italic;
+}
+.social a i {
+  font-size: 28px;
+}
+.insta {
+  height: 185px;
+  display: flex;
+  justify-content: space-between;
+}
+.insta img {
+  width: 165px;
+  padding: 10px;
+  background: white;
+}
+.container {
+  height: 3365px;
+}
+.links {
+  height: 150px;
+  float: right;
+  width: 100%;
+  display: flex;
+}
+.links a {
+  text-align: center;
+  font-size: 62px;
+  display: block;
+  width: 33.33333%;
+  height: 100%;
+  color: white;
+}
+.links a i {
+  display: block;
+  width: 100%;
+  padding: 44px 0;
+}
+.links a .fa-facebook {
+  background: #3b5997;
+}
+.links a .fa-twitter {
+  background: #3fccfd;
+}
+.links a .fa-pinterest {
+  background: #cb2027;
+}
+footer {
+  float: right;
+  width: 100%;
+  position: relative;
+  top: -21px;
+}
+footer .up {
+  height: 301px;
+  width: 100%;
+  background-color: #373737;
+}
+footer .up .upcontainer {
+  width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+footer .up .upcontainer .category {
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 28px;
+}
+footer .up .upcontainer .box {
+  display: block;
+  height: 230px;
+  width: 10%;
+}
+footer .up .upcontainer .box ul {
+  margin: 0;
+  padding: 0;
+}
+footer .up .upcontainer .box ul li {
+  list-style-type: none;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+footer .up .upcontainer .box2,
+footer .up .upcontainer .box3 {
+  display: block;
+  height: 230px;
+  width: 250px;
+  font-family: "Roboto", sans-serif;
+}
+footer .up .upcontainer .box2 .category,
+footer .up .upcontainer .box3 .category {
+  margin-bottom: 5px;
+}
+footer .up .upcontainer .box2 .text,
+footer .up .upcontainer .box3 .text {
+  color: #f8f8f8;
+  font-size: 12px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 12px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  width: 200px;
+  margin-bottom: 20px;
+}
+footer .up .upcontainer .box2 input,
+footer .up .upcontainer .box3 input {
+  background-color: #fff51f;
+  width: 180px;
+  height: 30px;
+  border: 0;
+  float: left;
+  color: #333333;
+  font-size: 12px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 21px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  text-transform: uppercase;
+  padding: 0;
+  margin-bottom: 45px;
+}
+footer .up .upcontainer .box2 button,
+footer .up .upcontainer .box3 button {
+  color: #ffffff;
+  font-size: 12px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 21px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  background-color: #000000;
+  width: 70px;
+  height: 30px;
+  border: 0;
+  text-transform: uppercase;
+}
+footer .up .upcontainer .box3 > .text {
+  width: 100%;
+  margin-bottom: 14px;
+}
+footer .bottom {
+  height: 47px;
+  width: 100%;
+  background-color: #333333;
+}
+footer .bottom .bottomcontainer {
+  width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  color: #dad9d9;
+  font-size: 12px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 21.6px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .bottom .bottomcontainer a i {
+  font-size: 15px;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  color: white;
+  text-shadow: 1px 1px 3px #000000;
+}
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.text2,
+.text3,
+.text4 {
+  color: #ffffff;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 23.4px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  float: left;
+  margin-right: 18px;
+}
+.text3 {
+  margin-right: 50px;
+}
+.text4 {
+  color: #faef03;
+}
+.menu_small {
+  display: none;
+}
+.menu_small ul {
+  padding: 0;
+  margin: 0;
+}
+.menu_small ul li {
+  list-style: none;
+  padding: 0;
+}
+.menu_small ul li a {
+  display: block;
+  text-decoration: none;
+  background: #26d2fc;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 900;
+  line-height: 32px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  text-transform: uppercase;
+}
+.menu_small ul li a:hover {
+  color: white;
+  background: #333333;
+}
+.menu_small a {
+  width: 100%;
+  font-size: 10px;
+  padding: 2px 0 ;
+}
+.menu_small button {
+  background: #333333;
+  width: 100%;
+  text-align: right;
+  border: 0;
+  margin: 0;
+  height: 20px;
+}
+.menu_small button a {
+  color: white;
+  font-size: 14px;
+}
+@media all and (max-width: 767px) {
+  .container,
+  .header_container,
+  main,
+  .content {
+    width: 100%;
+  }
+  .container header,
+  .header_container header,
+  main header,
+  .content header {
+    height: 500px;
+    width: 100%;
+  }
+  .container header .header_container,
+  .header_container header .header_container,
+  main header .header_container,
+  .content header .header_container {
+    width: 100%;
+  }
+  .container header .header_promo,
+  .header_container header .header_promo,
+  main header .header_promo,
+  .content header .header_promo,
+  .container header .icons,
+  .header_container header .icons,
+  main header .icons,
+  .content header .icons {
+    display: none;
+  }
+  .container header .welcome,
+  .header_container header .welcome,
+  main header .welcome,
+  .content header .welcome {
+    top: 200px;
+  }
+  main {
+    top: 0;
+  }
+  main .menu,
+  main .open {
+    display: none;
+  }
+  main .content {
+    width: 100%;
+  }
+  main .content .products {
+    justify-content: space-around;
+  }
+  main .social .insta img {
+    padding: 8px;
+  }
+  .insta img:nth-child(6) {
+    display: none;
+  }
+  .insta img:nth-child(5) {
+    display: none;
+  }
+  .insta img:nth-child(4) {
+    display: none;
+  }
+  .brands {
+    display: none;
+  }
+  footer .up {
+    height: auto;
+  }
+  footer .up .upcontainer {
+    width: 100%;
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 301px;
+  }
+  footer .up .upcontainer .box {
+    min-width: 100px;
+  }
+  footer .up .upcontainer .box2,
+  footer .up .upcontainer .box3 {
+    width: 250px;
+  }
+  footer .bottom .bottomcontainer {
+    width: 100%;
+  }
+  footer .bottom .bottomcontainer .icons {
+    display: none;
+  }
+  .menu_small {
+    display: block;
+  }
+  .menu_small ul {
+    display: none;
+  }
+  .menu_small:hover ul {
+    display: block;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .container,
+  .header_container,
+  main {
+    width: 100%;
+  }
+  .container .header_container,
+  .header_container .header_container,
+  main .header_container {
+    width: 100%;
+  }
+  .container .header_container .header_promo,
+  .header_container .header_container .header_promo,
+  main .header_container .header_promo {
+    right: 0;
+  }
+  .container .menu,
+  .header_container .menu,
+  main .menu {
+    width: 23%;
+    margin-right: 2%;
+  }
+  .container .menu a,
+  .header_container .menu a,
+  main .menu a {
+    width: 85%;
+  }
+  .container .content,
+  .header_container .content,
+  main .content {
+    width: 75%;
+  }
+  .container .content .products,
+  .header_container .content .products,
+  main .content .products {
+    justify-content: space-around;
+  }
+  .container .open,
+  .header_container .open,
+  main .open {
+    width: 23%;
+  }
+  .container .open div,
+  .header_container .open div,
+  main .open div {
+    width: 100%;
+    margin-left: 0;
+  }
+  .container .insta img:nth-child(6),
+  .header_container .insta img:nth-child(6),
+  main .insta img:nth-child(6) {
+    display: none;
+  }
+  .container .insta img:nth-child(5),
+  .header_container .insta img:nth-child(5),
+  main .insta img:nth-child(5) {
+    display: none;
+  }
+  .container footer .up,
+  .header_container footer .up,
+  main footer .up {
+    height: auto;
+  }
+  .container footer .up .upcontainer,
+  .header_container footer .up .upcontainer,
+  main footer .up .upcontainer {
+    width: 100%;
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 301px;
+  }
+  .container footer .bottom .bottomcontainer,
+  .header_container footer .bottom .bottomcontainer,
+  main footer .bottom .bottomcontainer {
+    width: 100%;
+  }
+  .box {
+    min-width: 100px;
+  }
+  .brands {
+    height: 70px;
+  }
+  .brands img {
+    height: 30px;
+  }
+}
+@media all and (min-width: 992px) and (max-width: 1186px) {
+  .container,
+  main {
+    width: 100%;
+  }
+  .container .header_container,
+  main .header_container {
+    width: 100%;
+  }
+  .container .menu,
+  main .menu {
+    width: 23%;
+    margin-right: 2%;
+  }
+  .container .menu a,
+  main .menu a {
+    width: 85%;
+  }
+  .container .content,
+  main .content {
+    width: 75%;
+  }
+  .container .content .products,
+  main .content .products {
+    justify-content: space-around;
+  }
+  .container .open,
+  main .open {
+    width: 23%;
+  }
+  .container .open div,
+  main .open div {
+    width: 100%;
+    margin-left: 0;
+  }
+  .container footer .up .upcontainer,
+  main footer .up .upcontainer {
+    width: 100%;
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 301px;
+  }
+  .container footer .bottom .bottomcontainer,
+  main footer .bottom .bottomcontainer {
+    width: 100%;
+  }
+  .insta img:nth-child(6) {
+    display: none;
+  }
+  .brands {
+    height: 70px;
+  }
+  .brands img {
+    height: 30px;
+  }
+}
