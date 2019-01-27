@@ -1,7 +1,11 @@
+
+
 body {
-	margin: 5vh auto;
+	margin: 0 auto;
+	height: 100vh;
 	background-image: url("../images/back.png");
 	background-size: cover;
+	padding: 5vh;
 
 }
 
