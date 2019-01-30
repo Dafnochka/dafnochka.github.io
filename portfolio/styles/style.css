@@ -48,7 +48,10 @@ body main a {
   text-decoration: none;
   color: black;
 }
-body main a :hover {
+body main a ul {
+  margin: 0;
+}
+body main a:hover {
   text-decoration: none;
   color: black;
 }
