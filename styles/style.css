@@ -2,8 +2,8 @@ body {
   margin: 0;
 }
 body header {
-  max-height: 300px;
-  min-height: 300px;
+  height: 100vw;
+  max-height: 40vh;
   background: url("../images/main_photo.jpg") right top;
   background-size: cover;
   padding: 50px;
@@ -39,33 +39,40 @@ body header .contacts {
 body header .contacts a {
   color: black;
 }
-body main a {
+body main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body main a.left,
+body main a.rigth {
   display: block;
-  padding: 5%;
-  width: 70%;
-  margin: 3vw;
+  padding: 2%;
+  width: 44%;
+  margin: 3%;
   box-shadow: 0 0 15px rgba(122, 122, 122, 0.5);
   text-decoration: none;
   color: black;
 }
-body main a ul {
+@media (max-width: 500px) {
+  body main a.left,
+  body main a.rigth {
+    width: 90%;
+  }
+}
+body main a.left ul,
+body main a.rigth ul {
   margin: 0;
 }
-body main a:hover {
+body main a.left:hover,
+body main a.rigth:hover {
   text-decoration: none;
   color: black;
 }
-body main a img {
+body main a.left img,
+body main a.rigth img {
   width: 100%;
   margin-bottom: 10px;
-}
-body main .left {
-  margin-left: 0;
-  float: left;
-}
-body main .rigth {
-  margin-right: 0;
-  float: right;
 }
 body .filler {
   height: 50px;
