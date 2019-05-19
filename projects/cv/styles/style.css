@@ -77,3 +77,28 @@ body footer {
 body footer a {
   height: 33px;
 }
+.skill {
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.red {
+  background: red;
+}
+.orange {
+  background: orange;
+}
+.yellow {
+  background: #fff51f;
+}
+.green {
+  background: #4cae4c;
+}
+.blue {
+  background: #2aabd2;
+}
+.violet {
+  background: violet;
+}
